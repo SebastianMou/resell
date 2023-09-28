@@ -8,8 +8,8 @@
   <title>Resell Rapids</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-<!-- Favicons -->
-<link rel="icon" href="img/lines-leaning-solid.svg" type="image/png">
+  <!-- Favicons -->
+  <link rel="icon" href="img/lines-leaning-solid.svg" type="image/png">
 
 
   <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
@@ -18,6 +18,8 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
+    
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -74,7 +76,6 @@
         /* End below the viewport */
       }
     }
-
 
     .scene .rocket {
       position: relative;
@@ -261,9 +262,6 @@
         <h1><a href="/">Resell Rapids</a></h1>
       </div>
 
-
-
-
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -271,23 +269,6 @@
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
         </ul>
@@ -296,27 +277,48 @@
 
     </div>
   </header><!-- End Header -->
+  <style>
+    /* Set the size and position of the particles container */
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: white; /* Set a background color for visibility */
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    #hero {
+        position: relative; /* Set to relative so the absolute positioned particles-js is positioned relative to this container */
+    }
 
+    .container {
+        position: relative; /* Ensure the container is above the particles */
+        z-index: 2;
+    }
+</style>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Empower Your Amazon Business!</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">Discover, Source, and List Products with Ease</h2>
-          <div data-aos="fade-up" data-aos-delay="800">
-            <a href="" class="btn-get-started scrollto" data-bs-toggle="modal" data-bs-target="#exampleModal">Get
-              Started Now</a>
+  <section href="#hero" id="hero" class="d-flex align-items-center">
+    <div id="particles-js"></div> <!-- Added particles-js div here -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h1 data-aos="fade-up">Empower Your Amazon Business!</h1>
+            <h2 data-aos="fade-up" data-aos-delay="400">Discover, Source, and List Products with Ease</h2>
+            <div data-aos="fade-up" data-aos-delay="800">
+              <a href="" class="btn-get-started scrollto" data-bs-toggle="modal" data-bs-target="#exampleModal">Subscribe Now</a>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+            <img src="assets/img/saas/tabless.png" class="img-fluid animated" alt="">
           </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-        </div>
-      </div>
     </div>
-
-  </section><!-- End Hero -->
+  
+  </section><!-- End Hero -->    
+</script>
 
   <main id="main">
 
@@ -325,6 +327,7 @@
       <div class="container">
 
         <div class="row">
+          <h5 data-aos="fade-up" data-aos-delay="400">launching soon!</h5>
 
           <!-- <div class="col-lg-2 col-md-4 col-6">
             <img src="{% static 'assets/img/clients/client-1.png' %}" class="img-fluid" alt="" data-aos="zoom-in">
@@ -361,7 +364,7 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Who We Are</h2>
+          <h2>We Are</h2>
         </div>
 
         <div class="row content">
@@ -385,11 +388,23 @@
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <p>
-              IMAGE OF SERVICES
+              <div class="tilt-container">
+                <img class="img-fluid imgg" src="assets/img/saas/table cal.png" alt="" srcset="">
+              </div>
             </p>
             <a href="#" class="btn-learn-more">Learn More</a>
           </div>
         </div>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+              VanillaTilt.init(document.querySelector(".tilt-container"), {
+                  max: 25, // Max tilt rotation (degrees)
+                  speed: 400, // Speed of the enter/exit transition
+                  glare: true, // if it should have a "glare" effect
+                  "max-glare": 0.5, // the maximum "glare" opacity (1 = 100%, 0.5 = 50%)
+              });
+          });
+        </script>
 
       </div>
     </section><!-- End About Us Section -->
@@ -438,12 +453,12 @@
                   </div>
                 </div>
               </div>
-            </div><!-- End .content-->
+            </div>-- End .content-->
     </div>
     </div>
 
     </div>
-    </section> -->
+    </section>
     <!-- End Counts Section -->
 
     <!-- ======= Services Section ======= -->
@@ -773,10 +788,10 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>Portfolio</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
+          <p>All of our tools</p>
         </div>
 
-        <div class="row" data-aos="fade-up" data-aos-delay="200">
+        <!-- <div class="row" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
@@ -785,7 +800,7 @@
               <li data-filter=".filter-web">Web</li>
             </ul>
           </div>
-        </div>
+        </div> -->
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
 
@@ -872,46 +887,60 @@
             <div id="advancedAnalyticalTool">
               <div id="toolIntroduction">
                 <h1>Resale Rapids - Advanced Analytical Tool</h1>
-                <p>Introducing our Advanced Analytical Tool, a comprehensive feature of our SaaS product, designed to provide detailed analysis and complete insight into various product metrics. This tool is essential for Amazon sellers looking to optimize their listings and strategies, offering detailed insights and precise calculations to maximize profitability and gain a competitive edge.</p>
-            </div>
-        
-            <div id="keyFeatures">
+                <p>Introducing our Advanced Analytical Tool, a comprehensive feature of our SaaS product, designed to
+                  provide detailed analysis and complete insight into various product metrics. This tool is essential
+                  for Amazon sellers looking to optimize their listings and strategies, offering detailed insights and
+                  precise calculations to maximize profitability and gain a competitive edge.</p>
+              </div>
+
+              <div id="keyFeatures">
                 <h2>Key Features:</h2>
                 <ul>
-                    <li>Strategic Decision-Making: Evaluate product potential and choose products strategically.</li>
-                    <li>Financial Planning and Optimization: Understand cost structure and profitability with clear insights.</li>
-                    <li>Market Analysis and Product Optimization: Measure market demand with estimated sales and revenue.</li>
-                    <li>Brand Management and Compliance: Ensure compliance with Amazon's product identification requirements.</li>
-                    <li>Customer Feedback and Market Trends: Understand customer preferences and market trends.</li>
-                    <li>Inventory Management: Automate listing adjustments based on stock levels.</li>
-                    <li>Promotional Strategy: Automate promotional events effectively.</li>
-                    <li>Profit Calculator: A feature to calculate Total FBA Fee, Profit per Unit, Net Margin, ROI, and Estimated Monthly Profit based on various inputs like Product Price, Taxes including VAT, Product Cost, Additional per Unit Cost, Additional Monthly Costs, and Estimated Monthly Sales.</li>
+                  <li>Strategic Decision-Making: Evaluate product potential and choose products strategically.</li>
+                  <li>Financial Planning and Optimization: Understand cost structure and profitability with clear
+                    insights.</li>
+                  <li>Market Analysis and Product Optimization: Measure market demand with estimated sales and revenue.
+                  </li>
+                  <li>Brand Management and Compliance: Ensure compliance with Amazon's product identification
+                    requirements.</li>
+                  <li>Customer Feedback and Market Trends: Understand customer preferences and market trends.</li>
+                  <li>Inventory Management: Automate listing adjustments based on stock levels.</li>
+                  <li>Promotional Strategy: Automate promotional events effectively.</li>
+                  <li>Profit Calculator: A feature to calculate Total FBA Fee, Profit per Unit, Net Margin, ROI, and
+                    Estimated Monthly Profit based on various inputs like Product Price, Taxes including VAT, Product
+                    Cost, Additional per Unit Cost, Additional Monthly Costs, and Estimated Monthly Sales.</li>
                 </ul>
-            </div>
-        
-            <div id="benefits">
+              </div>
+
+              <div id="benefits">
                 <h2>Benefits:</h2>
                 <ul>
-                    <li>Informed Decision-Making: Make data-driven decisions with detailed product insights and analytics!</li>
-                    <li>Enhanced Profitability: Optimize your listings and strategies with precise profit calculations and insights!</li>
-                    <li>Strategic Advantage: Gain a competitive edge with comprehensive product overviews and in-depth analysis!</li>
+                  <li>Informed Decision-Making: Make data-driven decisions with detailed product insights and analytics!
+                  </li>
+                  <li>Enhanced Profitability: Optimize your listings and strategies with precise profit calculations and
+                    insights!</li>
+                  <li>Strategic Advantage: Gain a competitive edge with comprehensive product overviews and in-depth
+                    analysis!</li>
                 </ul>
-            </div>
-        
-            <div id="howItHelpsAmazonSellers">
+              </div>
+
+              <div id="howItHelpsAmazonSellers">
                 <h2>How It Helps Amazon Sellers:</h2>
                 <ul>
-                    <li>In-Depth Analysis: The tool provides detailed analysis and precise insights, allowing sellers to optimize their products and strategies effectively.</li>
-                    <li>Proactive Feedback Management: Sellers can monitor customer feedback and adjust their strategies according to market preferences and trends.</li>
+                  <li>In-Depth Analysis: The tool provides detailed analysis and precise insights, allowing sellers to
+                    optimize their products and strategies effectively.</li>
+                  <li>Proactive Feedback Management: Sellers can monitor customer feedback and adjust their strategies
+                    according to market preferences and trends.</li>
                 </ul>
-            </div>
+              </div>
               <div id="callToAction">
-                  🌟 Optimize Your Amazon Business with Our Advanced Analytical Tool! 🌟
-                  📊 Unlock Detailed Product Insights & Precise Profit Calculations! 📊
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Try It Now & Elevate Your Amazon Selling Journey!</a>
+                🌟 Optimize Your Amazon Business with Our Advanced Analytical Tool! 🌟
+                📊 Unlock Detailed Product Insights & Precise Profit Calculations! 📊
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Try It Now & Elevate Your Amazon
+                  Selling Journey!</a>
               </div>
             </div>
-          
+
           </div>
           <!-- ... Other Modal Content ... -->
           <div class="modal-footer">
@@ -931,44 +960,56 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <img style="border: 3px solid black;" src="assets/img/saas/dash.png" class="img-fluid"  alt="">
+            <img style="border: 3px solid black;" src="assets/img/saas/dash.png" class="img-fluid" alt="">
             <hr>
             <div id="automatedProductManagementSystem">
               <p id="productName">
-                  Product Name: Resale Rapids - Automated Product Management System
+                Product Name: Resale Rapids - Automated Product Management System
               </p>
               <p id="briefDescription" class="alert alert-info">
-                  Introducing Resale Rapids’ “Automated Product Management System,” a revolutionary tool designed to automate, optimize, and elevate Amazon listings. This system is an essential companion for Amazon sellers looking to maximize their sales with features like sales monitoring, dynamic updates, A/B testing, inventory management integration, and much more.
+                Introducing Resale Rapids’ “Automated Product Management System,” a revolutionary tool designed to
+                automate, optimize, and elevate Amazon listings. This system is an essential companion for Amazon
+                sellers looking to maximize their sales with features like sales monitoring, dynamic updates, A/B
+                testing, inventory management integration, and much more.
               </p>
               <h2 id="keyFeaturesTitle">Key Features:</h2>
               <ul id="keyFeaturesList">
-                  <li>Sales Performance Tracker: Monitor a product's sales over a user-defined period and receive updates if sales do not meet the specified threshold.</li>
-                  <li>Scheduled Price Adjustments: Automate pricing based on sales performance or time.</li>
-                  <li>Dynamic Description Updates: Optimize listings with automatic description rotations based on performance.</li>
-                  <li>Image Rotator: Rotate to a different image based on performance metrics.</li>
-                  <!-- ... Other Features ... -->
+                <li>Sales Performance Tracker: Monitor a product's sales over a user-defined period and receive updates
+                  if sales do not meet the specified threshold.</li>
+                <li>Scheduled Price Adjustments: Automate pricing based on sales performance or time.</li>
+                <li>Dynamic Description Updates: Optimize listings with automatic description rotations based on
+                  performance.</li>
+                <li>Image Rotator: Rotate to a different image based on performance metrics.</li>
+                <!-- ... Other Features ... -->
               </ul>
               <h2 id="benefitsTitle">Benefits:</h2>
               <ul id="benefitsList">
-                  <li>Optimized Performance: Ensure optimal engagement and conversions with dynamic updates and A/B testing.</li>
-                  <li>Automated Efficiency: Save time with automated price adjustments, scheduled uploads, and reduced manual intervention.</li>
-                  <li>Informed Decisions: Make data-based decisions with insights from the performance analytics dashboard.</li>
-                  <!-- ... Other Benefits ... -->
+                <li>Optimized Performance: Ensure optimal engagement and conversions with dynamic updates and A/B
+                  testing.</li>
+                <li>Automated Efficiency: Save time with automated price adjustments, scheduled uploads, and reduced
+                  manual intervention.</li>
+                <li>Informed Decisions: Make data-based decisions with insights from the performance analytics
+                  dashboard.</li>
+                <!-- ... Other Benefits ... -->
               </ul>
               <h2 id="amazonSellersTitle">How It Helps Amazon Sellers:</h2>
               <ul id="amazonSellersList">
-                  <li>Enhanced Customer Engagement: Improve the overall customer experience, leading to increased sales with timely promotions, optimized listings, and dynamic updates.</li>
-                  <li>Data-Based Insights: Refine strategies and make informed decisions with valuable insights on the effectiveness of changes.</li>
-                  <li>Proactive Management: Maintain a positive customer experience with the ability to make proactive adjustments to listings based on feedback and stock levels.</li>
-                  <!-- ... Other Points ... -->
+                <li>Enhanced Customer Engagement: Improve the overall customer experience, leading to increased sales
+                  with timely promotions, optimized listings, and dynamic updates.</li>
+                <li>Data-Based Insights: Refine strategies and make informed decisions with valuable insights on the
+                  effectiveness of changes.</li>
+                <li>Proactive Management: Maintain a positive customer experience with the ability to make proactive
+                  adjustments to listings based on feedback and stock levels.</li>
+                <!-- ... Other Points ... -->
               </ul>
               <div id="callToAction">
-                  🌟 Maximize Your Amazon Sales with Our Automated Product Management System! 🌟
-                  📈 Automate, Optimize, and Elevate Your Amazon Listings! 📈
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Try It Now & Transform Your Amazon Sales Journey!</a>
+                🌟 Maximize Your Amazon Sales with Our Automated Product Management System! 🌟
+                📈 Automate, Optimize, and Elevate Your Amazon Listings! 📈
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Try It Now & Transform Your Amazon
+                  Sales Journey!</a>
               </div>
             </div>
-          
+
           </div>
           <!-- ... Other Modal Content ... -->
           <div class="modal-footer">
@@ -997,35 +1038,49 @@
                 Resale Rapids - Amazon Product Detail Analyzer
               </p>
               <p id="briefDescription" class="alert alert-info">
-                  Introducing our Amazon Product Detail Analyzer, an advanced feature in our SaaS product that provides detailed analysis and real-time tracking of specific products on Amazon using web scraping and artificial intelligence. This tool is crucial for Amazon sellers seeking to gain detailed insights and analysis of specific products, including product images, sales, customer reviews, ratings, tags, availability, and more.
+                Introducing our Amazon Product Detail Analyzer, an advanced feature in our SaaS product that provides
+                detailed analysis and real-time tracking of specific products on Amazon using web scraping and
+                artificial intelligence. This tool is crucial for Amazon sellers seeking to gain detailed insights and
+                analysis of specific products, including product images, sales, customer reviews, ratings, tags,
+                availability, and more.
               </p>
               <h2 id="keyFeaturesTitle">Key Features:</h2>
               <ul id="keyFeaturesList">
-                  <li>Real-Time Tracking: Monitor changes and updates to specific Amazon products instantly.</li>
-                  <li>Customer Review Analysis: Analyze customer reviews and ratings to better understand user perceptions and preferences.</li>
-                  <li>Product Details: Access detailed information such as title, image, brand, availability, and description.</li>
-                  <li>Tag Analysis: Identify and analyze the tags associated with the product for better classification and categorization.</li>
+                <li>Real-Time Tracking: Monitor changes and updates to specific Amazon products instantly.</li>
+                <li>Customer Review Analysis: Analyze customer reviews and ratings to better understand user perceptions
+                  and preferences.</li>
+                <li>Product Details: Access detailed information such as title, image, brand, availability, and
+                  description.</li>
+                <li>Tag Analysis: Identify and analyze the tags associated with the product for better classification
+                  and categorization.</li>
               </ul>
               <h2 id="benefitsTitle">Benefits:</h2>
               <ul id="benefitsList">
-                  <li>Competitive Advantage: Gain detailed insights to adapt strategies and outperform the competition.</li>
-                  <li>Informed Decision-Making: Use accurate and up-to-date data to make informed strategic decisions.</li>
-                  <li>Market Understanding: Understand market trends and consumer preferences with detailed analysis.</li>
+                <li>Competitive Advantage: Gain detailed insights to adapt strategies and outperform the competition.
+                </li>
+                <li>Informed Decision-Making: Use accurate and up-to-date data to make informed strategic decisions.
+                </li>
+                <li>Market Understanding: Understand market trends and consumer preferences with detailed analysis.</li>
               </ul>
               <h2 id="amazonSellersTitle">How It Helps Amazon Sellers:</h2>
               <ul id="amazonSellersList">
-                  <li>Competitive Insights: Sellers can adapt their strategies based on detailed product insights, thus enhancing their competitiveness.</li>
-                  <li>Listing Optimization: With detailed and up-to-date information, sellers can optimize their listings to improve visibility and conversions.</li>
-                  <li>Continuous Improvement: The tool allows sellers to continually improve their products and strategies based on detailed analysis and customer feedback.</li>
+                <li>Competitive Insights: Sellers can adapt their strategies based on detailed product insights, thus
+                  enhancing their competitiveness.</li>
+                <li>Listing Optimization: With detailed and up-to-date information, sellers can optimize their listings
+                  to improve visibility and conversions.</li>
+                <li>Continuous Improvement: The tool allows sellers to continually improve their products and strategies
+                  based on detailed analysis and customer feedback.</li>
               </ul>
               <div id="callToAction">
-                  🌟 Discover the Power of Our Amazon Product Detail Analyzer - Resale Rapids! 🌟
-                  🔍 Monitor and Analyze Products in Real-Time, and Gain Crucial Insights to Outperform the Competition! 🔍
-                  👉 Try It Now and Elevate Your Amazon Strategy to a New Level! 👈
-                  🌐 <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Try It Now & Transform Your Amazon Sales Journey!</a>
+                🌟 Discover the Power of Our Amazon Product Detail Analyzer - Resale Rapids! 🌟
+                🔍 Monitor and Analyze Products in Real-Time, and Gain Crucial Insights to Outperform the Competition!
+                🔍
+                👉 Try It Now and Elevate Your Amazon Strategy to a New Level! 👈
+                🌐 <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Try It Now & Transform Your Amazon
+                  Sales Journey!</a>
               </div>
-          </div>
-          
+            </div>
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" id="backToModal3"><i class="bi bi-arrow-left"></i></button>
@@ -1050,35 +1105,45 @@
             <hr>
             <div id="intelligentContentGenerator">
               <p id="productName">
-                  Product Name: Resale Rapids - Intelligent Content Generator
+                Product Name: Resale Rapids - Intelligent Content Generator
               </p>
               <p id="briefDescription" class="alert alert-info">
-                  Introducing our AI-Powered Content Generator, an innovative tool of our SaaS product designed to optimize Amazon listings through the generation of SEO-optimized titles, descriptions, and images. This tool is essential for Amazon sellers looking to maximize the visibility and conversion of their products on Amazon and Google.
+                Introducing our AI-Powered Content Generator, an innovative tool of our SaaS product designed to
+                optimize Amazon listings through the generation of SEO-optimized titles, descriptions, and images. This
+                tool is essential for Amazon sellers looking to maximize the visibility and conversion of their products
+                on Amazon and Google.
               </p>
               <h2 id="keyFeaturesTitle">Key Features:</h2>
               <ul id="keyFeaturesList">
-                  <li>Product Title Generator: Create attractive and SEO-optimized titles that stand out!</li>
-                  <li>Description Generator: Develop concise and informative descriptions that convert!</li>
-                  <li>Image Generator: Produce captivating images that capture attention!</li>
-                  <li>Amazon Specific Details: Adapt your content to align with Amazon's algorithms!</li>
+                <li>Product Title Generator: Create attractive and SEO-optimized titles that stand out!</li>
+                <li>Description Generator: Develop concise and informative descriptions that convert!</li>
+                <li>Image Generator: Produce captivating images that capture attention!</li>
+                <li>Amazon Specific Details: Adapt your content to align with Amazon's algorithms!</li>
               </ul>
               <h2 id="benefitsTitle">Benefits:</h2>
               <ul id="benefitsList">
-                  <li>Enhanced Visibility: Optimized titles and descriptions can significantly improve product visibility on Amazon and Google.</li>
-                  <li>Increased Conversion Rates: A well-crafted and SEO-optimized title and description can significantly improve the conversion rate.</li>
-                  <li>Time and Effort Saving: The AI-powered generator can save sellers a considerable amount of time and effort.</li>
-                  <li>Brand Consistency: Maintaining a consistent and professional tone reinforces brand identity.</li>
+                <li>Enhanced Visibility: Optimized titles and descriptions can significantly improve product visibility
+                  on Amazon and Google.</li>
+                <li>Increased Conversion Rates: A well-crafted and SEO-optimized title and description can significantly
+                  improve the conversion rate.</li>
+                <li>Time and Effort Saving: The AI-powered generator can save sellers a considerable amount of time and
+                  effort.</li>
+                <li>Brand Consistency: Maintaining a consistent and professional tone reinforces brand identity.</li>
               </ul>
               <h2 id="amazonSellersTitle">How It Helps Amazon Sellers:</h2>
               <ul id="amazonSellersList">
-                  <li>SEO Optimization: The tool creates SEO-optimized titles and descriptions that improve product visibility and ranking.</li>
-                  <li>Conversion Rate Improvement: With clear and concise content, sellers can improve user engagement and increase conversion rates.</li>
-                  <li>Efficiency and Consistency: The generator saves time and effort in creating effective content and ensures brand consistency across all listings.</li>
+                <li>SEO Optimization: The tool creates SEO-optimized titles and descriptions that improve product
+                  visibility and ranking.</li>
+                <li>Conversion Rate Improvement: With clear and concise content, sellers can improve user engagement and
+                  increase conversion rates.</li>
+                <li>Efficiency and Consistency: The generator saves time and effort in creating effective content and
+                  ensures brand consistency across all listings.</li>
               </ul>
               <div id="callToAction">
-                  🌟 Transform Your Amazon Listings with Our AI-Powered Content Generator! 🌟
-                  📈 Optimize Your Titles, Descriptions & Images for Maximum Visibility & Conversion! 📈
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Try It Now & Elevate Your Amazon Listing Game!</a>
+                🌟 Transform Your Amazon Listings with Our AI-Powered Content Generator! 🌟
+                📈 Optimize Your Titles, Descriptions & Images for Maximum Visibility & Conversion! 📈
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Try It Now & Elevate Your Amazon
+                  Listing Game!</a>
               </div>
             </div>
           </div>
@@ -1106,37 +1171,42 @@
             <div id="resaleRapidsNewsletter">
               <div id="resaleRapidsNewsletter">
                 <p id="productName">
-                    Product Name: Resale Rapids - MarketMinds Newsletter
+                  Product Name: Resale Rapids - MarketMinds Newsletter
                 </p>
                 <p id="briefDescription" class="alert alert-info">
-                    Introducing our comprehensive resource designed to empower Amazon sellers with insights, strategies, and exclusive content! Offering advanced AI-driven analysis, real-time competitor monitoring, interactive dashboards, and much more.
+                  Introducing our comprehensive resource designed to empower Amazon sellers with insights, strategies,
+                  and exclusive content! Offering advanced AI-driven analysis, real-time competitor monitoring,
+                  interactive dashboards, and much more.
                 </p>
                 <h2 id="keyFeaturesTitle">Features:</h2>
                 <ul id="keyFeaturesList">
-                    <li>Trending Product Analysis: Identify and predict top-selling products and upcoming trends.</li>
-                    <li>Market Gap Identification: Analyze customer reviews and comments to identify unmet needs.</li>
-                    <!-- ... Other Features ... -->
+                  <li>Trending Product Analysis: Identify and predict top-selling products and upcoming trends.</li>
+                  <li>Market Gap Identification: Analyze customer reviews and comments to identify unmet needs.</li>
+                  <!-- ... Other Features ... -->
                 </ul>
                 <h2 id="benefitsTitle">Benefits:</h2>
                 <ul id="benefitsList">
-                    <li>Strategic Advantage: Gain unparalleled insights into market trends, competitor strategies, and customer sentiments.</li>
-                    <li>Risk Mitigation: Proactively manage risks and ensure compliance with timely alerts.</li>
-                    <!-- ... Other Benefits ... -->
+                  <li>Strategic Advantage: Gain unparalleled insights into market trends, competitor strategies, and
+                    customer sentiments.</li>
+                  <li>Risk Mitigation: Proactively manage risks and ensure compliance with timely alerts.</li>
+                  <!-- ... Other Benefits ... -->
                 </ul>
                 <h2 id="amazonSellersTitle">How It Helps Amazon Sellers:</h2>
                 <ul id="amazonSellersList">
-                    <li>Strategic Advantage: Sellers can effectively optimize their listings by gaining unparalleled insights.</li>
-                    <li>Risk Mitigation: Sellers can safeguard their business by proactively managing risks.</li>
-                    <!-- ... Other Points ... -->
+                  <li>Strategic Advantage: Sellers can effectively optimize their listings by gaining unparalleled
+                    insights.</li>
+                  <li>Risk Mitigation: Sellers can safeguard their business by proactively managing risks.</li>
+                  <!-- ... Other Points ... -->
                 </ul>
                 <div id="callToAction">
-                    🚀 Discover our ultimate SaaS Newsletter for sellers and elevate your Amazon business to new heights! 🚀
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Subscribe Now</a>
+                  🚀 Discover our ultimate SaaS Newsletter for sellers and elevate your Amazon business to new heights!
+                  🚀
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Subscribe Now</a>
                 </div>
+              </div>
+
             </div>
-            
-          </div>
-          
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" id="backToModal5"><i class="bi bi-arrow-left"></i></button>
@@ -1161,34 +1231,47 @@
             <hr>
             <div id="competitiveProductAnalyzer">
               <p id="productName">
-                  Product Name: Resale Rapids - Competitive Product Analyzer
+                Product Name: Resale Rapids - Competitive Product Analyzer
               </p>
               <p id="briefDescription" class="alert alert-info">
-                  Introducing our innovative Amazon Product Tracker, a feature in our SaaS product designed to empower Amazon sellers by providing real-time tracking and performance analysis of competitor products on Amazon. It displays detailed product details, allowing sellers to monitor any changes and analyze performance instantly.
+                Introducing our innovative Amazon Product Tracker, a feature in our SaaS product designed to empower
+                Amazon sellers by providing real-time tracking and performance analysis of competitor products on
+                Amazon. It displays detailed product details, allowing sellers to monitor any changes and analyze
+                performance instantly.
               </p>
               <h2 id="keyFeaturesTitle">Key Features:</h2>
               <ul id="keyFeaturesList">
-                  <li>Real-Time Tracking: Monitor competitor products on Amazon for any real-time changes!</li>
-                  <li>Performance Analysis: Gain insights on how a product is performing in terms of ratings, price, and availability!</li>
-                  <li>Detailed Product Overview: Access comprehensive details like Product Title, Brand, Price, Description, and more!</li>
+                <li>Real-Time Tracking: Monitor competitor products on Amazon for any real-time changes!</li>
+                <li>Performance Analysis: Gain insights on how a product is performing in terms of ratings, price, and
+                  availability!</li>
+                <li>Detailed Product Overview: Access comprehensive details like Product Title, Brand, Price,
+                  Description, and more!</li>
               </ul>
               <h2 id="benefitsTitle">Benefits:</h2>
               <ul id="benefitsList">
-                  <li>Strategic Advantage: Stay informed about the competitor's movements and adapt your strategies to stay ahead!</li>
-                  <li>Informed Decision-Making: Make data-driven decisions with real-time insights and detailed product overviews!</li>
-                  <li>Time & Effort Saving: Let AI monitor and analyze competitor products, saving you time and effort!</li>
-                  <li>Enhanced Market Understanding: Better understand market trends and competitor strategies with instant tracking and analysis!</li>
+                <li>Strategic Advantage: Stay informed about the competitor's movements and adapt your strategies to
+                  stay ahead!</li>
+                <li>Informed Decision-Making: Make data-driven decisions with real-time insights and detailed product
+                  overviews!</li>
+                <li>Time & Effort Saving: Let AI monitor and analyze competitor products, saving you time and effort!
+                </li>
+                <li>Enhanced Market Understanding: Better understand market trends and competitor strategies with
+                  instant tracking and analysis!</li>
               </ul>
               <h2 id="amazonSellersTitle">How It Helps Amazon Sellers:</h2>
               <ul id="amazonSellersList">
-                  <li>Competitive Insight: Sellers can gain a strategic advantage by staying informed about competitor products and performances, allowing them to effectively adapt their strategies.</li>
-                  <li>Data-Driven Strategies: With real-time insights and detailed product overviews, sellers can make informed decisions to optimize their listings and pricing strategies.</li>
-                  <li>Efficiency and Focus: The tool saves sellers time and effort in monitoring competitor products, allowing them to focus more on improving their products and strategies.</li>
+                <li>Competitive Insight: Sellers can gain a strategic advantage by staying informed about competitor
+                  products and performances, allowing them to effectively adapt their strategies.</li>
+                <li>Data-Driven Strategies: With real-time insights and detailed product overviews, sellers can make
+                  informed decisions to optimize their listings and pricing strategies.</li>
+                <li>Efficiency and Focus: The tool saves sellers time and effort in monitoring competitor products,
+                  allowing them to focus more on improving their products and strategies.</li>
               </ul>
               <div id="callToAction">
-                  🌟 Stay Ahead with Our Real-Time Amazon Product Tracker! 🌟
-                  🔍 Monitor Competitor Products, Track Changes & Analyze Performance Instantly! 🔍
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Try It Now & Gain a Competitive Edge in the Amazon Marketplace!</a>
+                🌟 Stay Ahead with Our Real-Time Amazon Product Tracker! 🌟
+                🔍 Monitor Competitor Products, Track Changes & Analyze Performance Instantly! 🔍
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Try It Now & Gain a Competitive Edge
+                  in the Amazon Marketplace!</a>
               </div>
             </div>
 
@@ -1215,28 +1298,36 @@
             <img style="border: 3px solid black;" src="assets/img/saas/img_genn.png" class="img-fluid" alt="">
             <hr>
             <div class="alert alert-info">
-              <p>An advanced AI-powered Image Generator and DALL·E, designed to empower Amazon sellers by transforming texts into visuals, generating custom models, and modifying images precisely.</p>
+              <p>An advanced AI-powered Image Generator and DALL·E, designed to empower Amazon sellers by transforming
+                texts into visuals, generating custom models, and modifying images precisely.</p>
             </div>
-              <h2>Key Features:</h2>
-              <ul>
-                  <li>Text-to-Image Transformation: Convert any text into six dynamic images instantly!</li>
-                  <li>Custom Model Generation: Create your own models and overlay your products for enhanced representation!</li>
-                  <li>Image Modification: Upload and instruct AI to adapt images to your exact needs!</li>
-                  <li>Customized Product Mockups: Visualize products in various environments, colors, or styles.</li>
-              </ul>
-              <h2>Benefits:</h2>
-              <ul>
-                  <li>Enhanced Creativity and Customization: Explore diverse visuals and create custom models for unique product representation!</li>
-                  <li>Increased Engagement and Conversions: Attract more buyers with tailor-made and compelling images!</li>
-                  <li>Time and Effort Savings: Let AI do the heavy lifting in creating and modifying images effortlessly!</li>
-                  <li>Versatile Applications: Ideal for optimizing product images, ad creatives, social media posts, and more!</li>
-              </ul>
-              <h2>How It Helps Amazon Sellers:</h2>
-              <ul>
-                  <li>Unique Product Representation: Generate your own models and overlay your products for a unique and personalized product representation.</li>
-                  <li>Creative Control and Customization: Empower sellers to explore diverse visuals, create custom models, and modify images to align perfectly with their brand vision and identity.</li>
-                  <li>Efficiency and Versatility: Save time and effort with the AI-powered generator, ideal for creating optimized product images, ad creatives, social media posts, and more.</li>
-              </ul>
+            <h2>Key Features:</h2>
+            <ul>
+              <li>Text-to-Image Transformation: Convert any text into six dynamic images instantly!</li>
+              <li>Custom Model Generation: Create your own models and overlay your products for enhanced representation!
+              </li>
+              <li>Image Modification: Upload and instruct AI to adapt images to your exact needs!</li>
+              <li>Customized Product Mockups: Visualize products in various environments, colors, or styles.</li>
+            </ul>
+            <h2>Benefits:</h2>
+            <ul>
+              <li>Enhanced Creativity and Customization: Explore diverse visuals and create custom models for unique
+                product representation!</li>
+              <li>Increased Engagement and Conversions: Attract more buyers with tailor-made and compelling images!</li>
+              <li>Time and Effort Savings: Let AI do the heavy lifting in creating and modifying images effortlessly!
+              </li>
+              <li>Versatile Applications: Ideal for optimizing product images, ad creatives, social media posts, and
+                more!</li>
+            </ul>
+            <h2>How It Helps Amazon Sellers:</h2>
+            <ul>
+              <li>Unique Product Representation: Generate your own models and overlay your products for a unique and
+                personalized product representation.</li>
+              <li>Creative Control and Customization: Empower sellers to explore diverse visuals, create custom models,
+                and modify images to align perfectly with their brand vision and identity.</li>
+              <li>Efficiency and Versatility: Save time and effort with the AI-powered generator, ideal for creating
+                optimized product images, ad creatives, social media posts, and more.</li>
+            </ul>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" id="backToModal7"><i class="bi bi-arrow-left"></i></button>
@@ -1261,39 +1352,46 @@
             <hr>
             <div id="competitiveProductAnalyzer">
               <p id="productName">
-                  Resale Rapids - AI Task Optimizer
+                Resale Rapids - AI Task Optimizer
               </p>
               <p id="briefDescription" class="alert alert-info">
-                  Introducing our Intelligent Task Optimizer, an advanced feature in our SaaS service designed to maximize the productivity and focus of Amazon sellers. This innovative Kanban To-Do List uses artificial intelligence to provide proactive reminders, a work clock, and specific frequencies to enhance concentration, allowing users to manage and optimize their tasks efficiently.
+                Introducing our Intelligent Task Optimizer, an advanced feature in our SaaS service designed to maximize
+                the productivity and focus of Amazon sellers. This innovative Kanban To-Do List uses artificial
+                intelligence to provide proactive reminders, a work clock, and specific frequencies to enhance
+                concentration, allowing users to manage and optimize their tasks efficiently.
               </p>
               <h2 id="keyFeaturesTitle">Key Features:</h2>
               <ul id="keyFeaturesList">
-                  <li>Intelligent Kanban List: Visually and effectively organize your tasks.</li>
-                  <li>Proactive Reminders: Receive alerts to stay on the right track.</li>
-                  <li>Integrated Work Clock: Manage your time effectively with a work clock.</li>
-                  <li>Concentration Frequencies: Use specific frequencies to enhance your concentration and productivity.</li>
+                <li>Intelligent Kanban List: Visually and effectively organize your tasks.</li>
+                <li>Proactive Reminders: Receive alerts to stay on the right track.</li>
+                <li>Integrated Work Clock: Manage your time effectively with a work clock.</li>
+                <li>Concentration Frequencies: Use specific frequencies to enhance your concentration and productivity.
+                </li>
               </ul>
               <h2 id="benefitsTitle">Benefits:</h2>
               <ul id="benefitsList">
-                  <li>Time Optimization: Maximize your time with intelligent task management.</li>
-                  <li>Productivity Enhancement: Boost your performance with improved concentration and reminders.</li>
-                  <li>Effective Task Management: Efficiently organize and prioritize your tasks with our Kanban list.</li>
+                <li>Time Optimization: Maximize your time with intelligent task management.</li>
+                <li>Productivity Enhancement: Boost your performance with improved concentration and reminders.</li>
+                <li>Effective Task Management: Efficiently organize and prioritize your tasks with our Kanban list.</li>
               </ul>
               <h2 id="amazonSellersTitle">How It Helps Amazon Sellers:</h2>
               <ul id="amazonSellersList">
-                  <li>Enhanced Task Management: Sellers can effectively organize and prioritize their tasks.</li>
-                  <li>Increased Concentration: Specific frequencies and the work clock assist sellers in staying focused.</li>
-                  <li>Optimized Productivity: Proactive reminders and intelligent task management enable sellers to maximize their performance.</li>
+                <li>Enhanced Task Management: Sellers can effectively organize and prioritize their tasks.</li>
+                <li>Increased Concentration: Specific frequencies and the work clock assist sellers in staying focused.
+                </li>
+                <li>Optimized Productivity: Proactive reminders and intelligent task management enable sellers to
+                  maximize their performance.</li>
               </ul>
               <div id="callToAction">
-                  🌟 Elevate Your Productivity with Resale Rapids - Intelligent Task Optimizer! 🌟
-                  🚀 Organize, Manage, and Optimize Your Tasks with Our Innovative Tool! 🚀
-                  💡 Maximize Your Time, Enhance Your Concentration, and Boost Your Performance Effectively!
-                  👉 Try It Now and Transform Your Way of Working! 👈
-                  🌐 <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Try It Now & Elevate Your Amazon Listing Game!</a>
+                🌟 Elevate Your Productivity with Resale Rapids - Intelligent Task Optimizer! 🌟
+                🚀 Organize, Manage, and Optimize Your Tasks with Our Innovative Tool! 🚀
+                💡 Maximize Your Time, Enhance Your Concentration, and Boost Your Performance Effectively!
+                👉 Try It Now and Transform Your Way of Working! 👈
+                🌐 <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Try It Now & Elevate Your Amazon
+                  Listing Game!</a>
               </div>
             </div>
-          
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" id="backToModal8"><i class="bi bi-arrow-left"></i></button>
@@ -1490,7 +1588,7 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Frequently Asked Questions</h2>
+          <h2>FAQ</h2>
         </div>
 
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
@@ -1584,11 +1682,11 @@
 
         <div class="row">
 
-          <div class="col" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="contact-about">
-              <h3>Vesperr</h3>
-              <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque
-                felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+              <h3>Resell Rapids</h3>
+              <p>Transform your Amazon business with our AI-powered suite, offering real-time product tracking,
+                competitor monitoring, insightful analytics, and content optimization!</p>
               <div class="social-links">
                 <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -1598,7 +1696,7 @@
             </div>
           </div>
 
-          <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="info">
               <div>
                 <i class="ri-map-pin-line"></i>
@@ -1617,33 +1715,6 @@
 
             </div>
           </div>
-
-          <!-- <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
-            <form action="" method="">
-              <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-              </div>
-              <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-              </div>
-              <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center">
-                  <button type="submit">Send Message</button>
-              </div>
-            </form>
-          
-          </div> -->
-
         </div>
 
       </div>
@@ -1670,10 +1741,10 @@
         </div>
         <div class="col-lg-6">
           <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-            <a href="#intro" class="scrollto">Home</a>
-            <a href="#about" class="scrollto">About</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
+            <a href="#hero" class="scrollto">Home</a>
+            <a href="#about" class="scrollto">We are</a>
+            <a href="#portfolio" class="scrollto">Portfolio</a>
+            <a href="#pricing" class="scrollto">Pricing</a>
           </nav>
         </div>
       </div>
@@ -1689,7 +1760,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="scene">
+          <div class="scene overflow-auto">
             <div class="content-wrapper"> <!-- New container div -->
               <div class="rocket">
                 <img src="img/rocket.png" alt="" srcset="">
@@ -1710,8 +1781,8 @@
                 <h2>Subscribe Now</h2>
                 <p>Stay updated with our latest news and offers.</p>
                 <form action="https://submit-form.com/wlmKcO7i" method="POST">
-                    <input type="email" name="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
+                  <input type="email" name="email" placeholder="Enter your email" required>
+                  <button type="submit">Subscribe</button>
                 </form>
               </div>
 
@@ -1722,157 +1793,212 @@
     </div>
   </div>
 
-  <script>
-    function stars() {
-      let count = 100;
-      let scene = document.querySelector('.scene');
-      let i = 0;
-      while (i < count) {
-        let star = document.createElement('i');
-        let x = Math.floor(Math.random() * window.innerWidth);
-        let duration = Math.random() * 5 + 1; // Random duration between 1 to 6 seconds
-        let h = Math.random() * 100;
-        star.style.left = x + 'px';
-        star.style.width = '1px';
-        star.style.height = 60 + h + 'px';
-        star.style.animationDuration = duration + 's';
-        scene.appendChild(star);
-        i++;
+<script>
+  particlesJS('particles-js', {
+
+    particles: {
+      number: { value: 200, density: { enable: true, value_area: 800 } },
+      color: { value: '#3498DB' }, // Changed color to blue
+      shape: {
+        type: 'circle',
+        stroke: { width: 0, color: '#000000' },
+        polygon: { nb_sides: 5 },
+        image: { src: 'img/github.svg', width: 100, height: 100 }
+      },
+      opacity: {
+        value: 0.5,
+        random: false,
+        anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
+      },
+      size: {
+        value: 3,
+        random: true,
+        anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+      },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: '#3498DB', // Changed line color to blue
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 6,
+        direction: 'none',
+        random: false,
+        straight: false,
+        out_mode: 'out',
+        bounce: false,
+        attract: { enable: false, rotateX: 600, rotateY: 1200 }
       }
+    },
+    interactivity: {
+      detect_on: 'canvas',
+      events: {
+        onhover: { enable: true, mode: 'repulse' },
+        onclick: { enable: true, mode: 'push' },
+        resize: true
+      },
+      modes: {
+        grab: { distance: 400, line_linked: { opacity: 1 } },
+        bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+        repulse: { distance: 200, duration: 0.4 },
+        push: { particles_nb: 4 },
+        remove: { particles_nb: 2 }
+      }
+    },
+    retina_detect: true
+  });
+
+  function stars() {
+    let count = 100;
+    let scene = document.querySelector('.scene');
+    let i = 0;
+    while (i < count) {
+      let star = document.createElement('i');
+      let x = Math.floor(Math.random() * window.innerWidth);
+      let duration = Math.random() * 5 + 1; // Random duration between 1 to 6 seconds
+      let h = Math.random() * 100;
+      star.style.left = x + 'px';
+      star.style.width = '1px';
+      star.style.height = 60 + h + 'px';
+      star.style.animationDuration = duration + 's';
+      scene.appendChild(star);
+      i++;
     }
-    stars();
+  }
+  stars();
 
-    document.addEventListener("DOMContentLoaded", function () {
-      // Check if we already have an end time in localStorage
-      var countDownDate = localStorage.getItem('countDownDate');
+  document.addEventListener("DOMContentLoaded", function () {
+    // Check if we already have an end time in localStorage
+    var countDownDate = localStorage.getItem('countDownDate');
 
-      // If not, set the date we're counting down to (one month from now) and store it in localStorage
-      if (!countDownDate) {
-        var now = new Date().getTime();
-        countDownDate = new Date(now + 30 * 24 * 60 * 60 * 1000); // Adds one month to the current date
-        localStorage.setItem('countDownDate', countDownDate);
+    // If not, set the date we're counting down to (one month from now) and store it in localStorage
+    if (!countDownDate) {
+      var now = new Date().getTime();
+      countDownDate = new Date(now + 30 * 24 * 60 * 60 * 1000); // Adds one month to the current date
+      localStorage.setItem('countDownDate', countDownDate);
+    }
+
+    // Update the countdown every second
+    var x = setInterval(function () {
+      var now = new Date().getTime();
+      var distance = new Date(countDownDate).getTime() - now;
+
+      // Time calculations
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the results
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+
+      // If the countdown is finished, display a message
+      if (distance < 0) {
+        clearInterval(x);
+        document.querySelector(".timer").innerHTML = "EXPIRED";
+        localStorage.removeItem('countDownDate'); // Clear the end time from localStorage
       }
+    }, 1000);
+  });
 
-      // Update the countdown every second
-      var x = setInterval(function () {
-        var now = new Date().getTime();
-        var distance = new Date(countDownDate).getTime() - now;
+  document.addEventListener('DOMContentLoaded', (event) => {
+    var modal2 = new bootstrap.Modal(document.getElementById('exampleModal2'));
+    var modal3 = new bootstrap.Modal(document.getElementById('exampleModal3'));
+    var modal4 = new bootstrap.Modal(document.getElementById('exampleModal4'));
+    var modal5 = new bootstrap.Modal(document.getElementById('exampleModal5'));
+    var modal6 = new bootstrap.Modal(document.getElementById('exampleModal6'));
+    var modal7 = new bootstrap.Modal(document.getElementById('exampleModal7'));
+    var modal8 = new bootstrap.Modal(document.getElementById('exampleModal8'));
+    var modal9 = new bootstrap.Modal(document.getElementById('exampleModal9'));
+    var modal10 = new bootstrap.Modal(document.getElementById('exampleModal10'));
 
-        // Time calculations
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Display the results
-        document.getElementById("days").innerHTML = days;
-        document.getElementById("hours").innerHTML = hours;
-        document.getElementById("minutes").innerHTML = minutes;
-        document.getElementById("seconds").innerHTML = seconds;
-
-        // If the countdown is finished, display a message
-        if (distance < 0) {
-          clearInterval(x);
-          document.querySelector(".timer").innerHTML = "EXPIRED";
-          localStorage.removeItem('countDownDate'); // Clear the end time from localStorage
-        }
-      }, 1000);
+    // Modal 2 and Modal 3
+    document.getElementById('openModal3').addEventListener('click', function () {
+      modal2.hide();
+      modal3.show();
+    });
+    document.getElementById('backToModal2').addEventListener('click', function () {
+      modal3.hide();
+      modal2.show();
     });
 
-    document.addEventListener('DOMContentLoaded', (event) => {
-      var modal2 = new bootstrap.Modal(document.getElementById('exampleModal2'));
-      var modal3 = new bootstrap.Modal(document.getElementById('exampleModal3'));
-      var modal4 = new bootstrap.Modal(document.getElementById('exampleModal4'));
-      var modal5 = new bootstrap.Modal(document.getElementById('exampleModal5'));
-      var modal6 = new bootstrap.Modal(document.getElementById('exampleModal6'));
-      var modal7 = new bootstrap.Modal(document.getElementById('exampleModal7'));
-      var modal8 = new bootstrap.Modal(document.getElementById('exampleModal8'));
-      var modal9 = new bootstrap.Modal(document.getElementById('exampleModal9'));
-      var modal10 = new bootstrap.Modal(document.getElementById('exampleModal10'));
-
-      // Modal 2 and Modal 3
-      document.getElementById('openModal3').addEventListener('click', function () {
-        modal2.hide();
-        modal3.show();
-      });
-      document.getElementById('backToModal2').addEventListener('click', function () {
-        modal3.hide();
-        modal2.show();
-      });
-
-      // Modal 3 and Modal 4
-      document.getElementById('openModal4').addEventListener('click', function () {
-        modal3.hide();
-        modal4.show();
-      });
-      document.getElementById('backToModal3').addEventListener('click', function () {
-        modal4.hide();
-        modal3.show();
-      });
-
-      // Modal 4 and Modal 5
-      document.getElementById('openModal5').addEventListener('click', function () {
-        modal4.hide();
-        modal5.show();
-      });
-      document.getElementById('backToModal4').addEventListener('click', function () {
-        modal5.hide();
-        modal4.show();
-      });
-
-      // Modal 5 and Modal 6
-      document.getElementById('openModal6').addEventListener('click', function () {
-        modal5.hide();
-        modal6.show();
-      });
-      document.getElementById('backToModal5').addEventListener('click', function () {
-        modal6.hide();
-        modal5.show();
-      });
-
-      // Modal 6 and Modal 7
-      document.getElementById('openModal7').addEventListener('click', function () {
-        modal6.hide();
-        modal7.show();
-      });
-      document.getElementById('backToModal6').addEventListener('click', function () {
-        modal7.hide();
-        modal6.show();
-      });
-
-      // Modal 7 and Modal 8
-      document.getElementById('openModal8').addEventListener('click', function () {
-        modal7.hide();
-        modal8.show();
-      });
-      document.getElementById('backToModal7').addEventListener('click', function () {
-        modal8.hide();
-        modal7.show();
-      });
-
-      // Modal 8 and Modal 9
-      document.getElementById('openModal9').addEventListener('click', function () {
-        modal8.hide();
-        modal9.show();
-      });
-      document.getElementById('backToModal8').addEventListener('click', function () {
-        modal9.hide();
-        modal8.show();
-      });
-
-      // Modal 9 and Modal 10
-      document.getElementById('openModal10').addEventListener('click', function () {
-        modal9.hide();
-        modal10.show();
-      });
-      document.getElementById('backToModal9').addEventListener('click', function () {
-        modal10.hide();
-        modal9.show();
-      });
+    // Modal 3 and Modal 4
+    document.getElementById('openModal4').addEventListener('click', function () {
+      modal3.hide();
+      modal4.show();
+    });
+    document.getElementById('backToModal3').addEventListener('click', function () {
+      modal4.hide();
+      modal3.show();
     });
 
+    // Modal 4 and Modal 5
+    document.getElementById('openModal5').addEventListener('click', function () {
+      modal4.hide();
+      modal5.show();
+    });
+    document.getElementById('backToModal4').addEventListener('click', function () {
+      modal5.hide();
+      modal4.show();
+    });
 
-  </script>
+    // Modal 5 and Modal 6
+    document.getElementById('openModal6').addEventListener('click', function () {
+      modal5.hide();
+      modal6.show();
+    });
+    document.getElementById('backToModal5').addEventListener('click', function () {
+      modal6.hide();
+      modal5.show();
+    });
+
+    // Modal 6 and Modal 7
+    document.getElementById('openModal7').addEventListener('click', function () {
+      modal6.hide();
+      modal7.show();
+    });
+    document.getElementById('backToModal6').addEventListener('click', function () {
+      modal7.hide();
+      modal6.show();
+    });
+
+    // Modal 7 and Modal 8
+    document.getElementById('openModal8').addEventListener('click', function () {
+      modal7.hide();
+      modal8.show();
+    });
+    document.getElementById('backToModal7').addEventListener('click', function () {
+      modal8.hide();
+      modal7.show();
+    });
+
+    // Modal 8 and Modal 9
+    document.getElementById('openModal9').addEventListener('click', function () {
+      modal8.hide();
+      modal9.show();
+    });
+    document.getElementById('backToModal8').addEventListener('click', function () {
+      modal9.hide();
+      modal8.show();
+    });
+
+    // Modal 9 and Modal 10
+    document.getElementById('openModal10').addEventListener('click', function () {
+      modal9.hide();
+      modal10.show();
+    });
+    document.getElementById('backToModal9').addEventListener('click', function () {
+      modal10.hide();
+      modal9.show();
+    });
+  });
+</script>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
@@ -1889,6 +2015,7 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
 
 </body>
 
