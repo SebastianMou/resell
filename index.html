@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Resell Rapids</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+<!-- Favicons -->
+<link rel="icon" href="img/lines-leaning-solid.svg" type="image/png">
+
+
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+  <!-- =======================================================
+  * Template Name: Vesperr
+  * Updated: Aug 30 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <style>
+    .scene {
+      position: inherit;
+      width: 100%;
+      height: 80vh;
+      background: #01070a;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      border-radius: 10px;
+    }
+
+    .scene i {
+      position: absolute;
+      top: 0;
+      /* Changed from -250px to 0 */
+      background: rgba(255, 255, 255, 0.5);
+      animation: animateStars linear infinite;
+    }
+
+    @keyframes animateStars {
+      0% {
+        transform: translateY(-100vh);
+        /* Start from above the viewport */
+      }
+
+      100% {
+        transform: translateY(100vh);
+        /* End below the viewport */
+      }
+    }
+
+
+    .scene .rocket {
+      position: relative;
+      animation: animate 0.2s ease infinite;
+      margin-top: 50px;
+    }
+
+    @keyframes animate {
+
+      0%,
+      100% {
+        transform: translate(-2px);
+      }
+
+      50% {
+        transform: translate(2px);
+      }
+    }
+
+    .scene .rocket::before {
+      content: '';
+      position: absolute;
+      bottom: -200px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 10px;
+      height: 200px;
+      background: linear-gradient(#00d0ff, transparent);
+    }
+
+    .scene .rocket::after {
+      content: '';
+      position: absolute;
+      bottom: -200px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 10px;
+      height: 200px;
+      background: linear-gradient(#00d0ff, transparent);
+      filter: blur(20px);
+    }
+
+    .content-wrapper {
+      width: 1000px;
+      display: flex;
+      flex-direction: column;
+      /* Stack children vertically */
+      align-items: center;
+      /* Center children horizontally */
+    }
+
+    .rocket-text {
+      text-align: center;
+      margin-top: 60px;
+      color: #fff;
+      font-size: 45px;
+      /* Increased font size */
+      font-weight: bold;
+      /* Made the text bold */
+      letter-spacing: 2px;
+      /* Added some letter spacing */
+      text-transform: uppercase;
+      /* Converted text to uppercase */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      /* Added text shadow for depth */
+    }
+
+    .subscribe-section {
+      text-align: center;
+      color: #fff;
+    }
+
+    .subscribe-section {
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Semi-transparent black background */
+      border-radius: 10px;
+      /* Rounded corners */
+      width: 80%;
+      /* Adjust this value to control the width of the entire section */
+      max-width: 700px;
+      /* Set a maximum width for larger screens */
+      margin: 0 auto;
+      /* Center the section */
+
+    }
+
+    .subscribe-section h2 {
+      font-size: 28px;
+      /* Increased font size */
+      font-weight: bold;
+      /* Bold text */
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      /* Uppercase text */
+      letter-spacing: 1.5px;
+      /* Letter spacing */
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      /* Text shadow for depth */
+    }
+
+    .subscribe-section p {
+      font-size: 18px;
+      /* Increased font size */
+      margin-bottom: 25px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      /* Text shadow for depth */
+    }
+
+    .subscribe-section input[type="email"] {
+      padding: 12px;
+      /* Increased padding */
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      /* Rounded corners */
+      width: 100%;
+      max-width: 650px;
+      margin-bottom: 15px;
+      /* Space between input and button */
+      font-size: 16px;
+      /* Increased font size */
+    }
+
+    .subscribe-section button {
+      padding: 12px 25px;
+      /* Increased padding */
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      /* Rounded corners */
+      cursor: pointer;
+      font-size: 18px;
+      /* Increased font size */
+      font-weight: bold;
+      /* Bold text */
+      transition: background-color 0.3s, transform 0.3s;
+      /* Added transform transition */
+    }
+
+    .subscribe-section button:hover {
+      background-color: #555;
+      transform: scale(1.05);
+      /* Slightly enlarge the button on hover */
+    }
+
+    .timer {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 15px;
+      border-radius: 10px;
+      border: 3px solid #00d0ff;
+    }
+
+    .timer h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .timer>div {
+      display: inline-block;
+      padding: 10px 20px;
+      /* Increased padding for bigger text */
+      background-color: #333;
+      color: #fff;
+      border-radius: 5px;
+      margin: 0 10px;
+      /* Increased margin for spacing */
+      font-size: 32px;
+      /* Increased font size for the numbers */
+    }
+  </style>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo d-flex align-items-center">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html"><img src="img/lines-leaning-solid.svg" alt="" class="img-fluid me-1"
+            style="flex-shrink: 0; width: 50px;"></a>
+        <h1><a href="/">Resell Rapids</a></h1>
+      </div>
+
+
+
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Empower Your Amazon Business!</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Discover, Source, and List Products with Ease</h2>
+          <div data-aos="fade-up" data-aos-delay="800">
+            <a href="" class="btn-get-started scrollto" data-bs-toggle="modal" data-bs-target="#exampleModal">Get
+              Started Now</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients clients">
+      <div class="container">
+
+        <div class="row">
+
+          <!-- <div class="col-lg-2 col-md-4 col-6">
+            <img src="{% static 'assets/img/clients/client-1.png' %}" class="img-fluid" alt="" data-aos="zoom-in">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="{% static 'assets/img/clients/client-2.png' %}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="{% static 'assets/img/clients/client-3.png' %}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="{% static 'assets/img/clients/client-4.png' %}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="{% static 'assets/img/clients/client-5.png' %}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="{% static 'assets/img/clients/client-6.png' %}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
+          </div> -->
+          <br><br>
+
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Who We Are</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <p>
+              We are a dedicated team of e-commerce enthusiasts and tech experts, united by a single mission:
+              to help Amazon sellers thrive. With our cutting-edge web scraping technology and AI-driven tools,
+              we simplify the process of product discovery, sourcing, and listing. Join us on this journey to e-commerce
+              success.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Product Discovery: "Unearth hidden gems in the Amazon marketplace
+                with our advanced web scraping technology."</li>
+              <li><i class="ri-check-double-line"></i> Bulk Sourcing: "Find the best places to buy products in bulk,
+                ensuring you get the best deals."</li>
+              <li><i class="ri-check-double-line"></i> Listing Assistance: "AI-powered tools to generate captivating
+                posts and descriptions, making your products stand out."</li>
+              <li><i class="ri-check-double-line"></i> E-commerce Integration: "Seamlessly post on Amazon or any
+                e-commerce platform of your choice."</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <p>
+              IMAGE OF SERVICES
+            </p>
+            <a href="#" class="btn-learn-more">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <!-- <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
+            <img src="{% static 'assets/img/counts-img.svg' %}" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
+            <div class="content d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-emoji-smile"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Happy Clients</strong> consequuntur voluptas nostrum aliquid ipsam architecto ut.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et quia dere tan</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-award"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Awards</strong> rerum asperiores dolor alias quo reprehenderit eum et nemo pad der</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+    </div>
+    </div>
+
+    </div>
+    </section> -->
+    <!-- End Counts Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Services</h2>
+          <p>Features That Set Us Apart</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">Product Discovery</a></h4>
+              <p class="description">Unearth hidden gems in the Amazon marketplace with our advanced web scraping
+                technology.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Bulk Sourcing</a></h4>
+              <p class="description">Find the best places to buy products in bulk, ensuring you get the best deals.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Listing Assistance</a></h4>
+              <p class="description">AI-powered tools to generate captivating posts and descriptions, making your
+                products stand out.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">E-commerce Integration</a></h4>
+              <p class="description">Seamlessly post on Amazon or any e-commerce platform of your choice.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= More Services Section ======= -->
+    <!-- <section id="more-services" class="more-services">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card" style='background-image: url("{% static "assets/img/more-services-1.jpg" %}");' data-aos="fade-up" data-aos-delay="100">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Lobira Duno</a></h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="card" style='background-image: url("{% static "assets/img/more-services-2.jpg" %}");' data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Limere Radses</a></h5>
+                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem.</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4">
+            <div class="card" style='background-image: url("{% static "assets/img/more-services-3.jpg" %} ");' data-aos="fade-up" data-aos-delay="100">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Nive Lodo</a></h5>
+                <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores.</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4">
+            <div class="card" style='background-image: url("{% static "assets/img/more-services-4.jpg" %}");' data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Pale Treda</a></h5>
+                <p class="card-text">Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam laudantium voluptatem.</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End More Services Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Features</h2>
+          <p>Features That Set Us Apart</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-3 col-md-4">
+            <div class="icon-box">
+              <i class="ri-line-chart-line" style="color: #ffbb2c;"></i>
+              <h3><a href="">Real-time Data</a></h3>
+              <!-- <p>Get up-to-date information on trending products.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="ri-tools-line" style="color: #5578ff;"></i>
+              <h3><a href="">AI & Non-AI Tools</a></h3>
+              <!-- <p>From post generation to market analysis.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="ri-terminal-window-line" style="color: #e80368;"></i>
+              <h3><a href="">User-friendly Dashboard</a></h3>
+              <!-- <p>Manage all activities from a single platform.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="ri-git-repository-private-line" style="color: #e361ff;"></i>
+              <h3><a href="">Secure & Reliable</a></h3>
+              <!-- <p>Your data is safe with us.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-database-2-line" style="color: #47aeff;"></i>
+              <h3><a href="">Bulk Sourcing</a></h3>
+              <!-- <p>Find the best places to buy products in bulk.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
+              <h3><a href="">E-commerce Integration</a></h3>
+              <!-- <p>Post on Amazon or any platform of your choice.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
+              <h3><a href="">Listing Assistance</a></h3>
+              <!-- <p>AI-powered tools to make your products stand out.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-instance-fill" style="color: #4233ff;"></i>
+              <h3><a href="">Product Discovery</a></h3>
+              <!-- <p>Unearth hidden gems in the Amazon marketplace.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-numbers-line" style="color: #b2904f;"></i>
+              <h3><a href="">Competitor Analysis</a></h3>
+              <!-- <p>Gain insights into your competitors' strategies and performance.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-building-2-line" style="color: #b20969;"></i>
+              <h3><a href="">Inventory Management</a></h3>
+              <!-- <p>Keep track of your stock levels and optimize inventory turnover.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-base-station-line" style="color: #ff5828;"></i>
+              <h3><a href="">Automated Reporting</a></h3>
+              <!-- <p>Receive detailed reports on sales, trends, and more, automatically.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
+              <h3><a href="">Fraud Prevention</a></h3>
+              <!-- <p>Advanced tools to detect and prevent fraudulent activities.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-team-fill" style="color: #ff9f43;"></i>
+              <h3><a href="">24/7 Support</a></h3>
+              <!-- <p>Our team is always here to assist you, anytime you need.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-settings-4-line" style="color: #1bb1dc;"></i>
+              <h3><a href="">Custom Integrations</a></h3>
+              <!-- <p>Integrate with third-party tools and platforms seamlessly.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-briefcase-4-line" style="color: #9408b4;"></i>
+              <h3><a href="">Supplier Negotiations</a></h3>
+              <!-- <p>Tools to help you negotiate better deals with suppliers.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-bookmark-line" style="color: #27ae60;"></i>
+              <h3><a href="">Training & Resources</a></h3>
+              <!-- <p>Access to tutorials, webinars, and educational content.</p> -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+
+    <!-- ======= Testimonials Section ======= -->
+    <!-- <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Testimonials</h2>
+          <p>Magnam dolores commodi suscipit eum quidem consectetur velit</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'assets/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Testimonials Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Portfolio</h2>
+          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
+
+
+          <!-- Button to trigger the 2 modal -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              <img src="assets/img/saas/tabless.png" class="img-fluid" alt="">
+            </button>
+          </div>
+
+          <!-- Button to trigger the 3 modal -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+              <img src="assets/img/saas/dash.png" class="img-fluid" alt="">
+            </button>
+          </div>
+
+          <!-- Button to trigger the 4 modal -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+              <img src="assets/img/saas/detail_front.png" class="img-fluid" alt="">
+            </button>
+          </div>
+
+          <!-- Button to trigger the 5 modal -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+              <img src="assets/img/saas/gen.png" class="img-fluid" alt="">
+            </button>
+          </div>
+
+          <!-- Button to trigger the 6 modal -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+              <img src="assets/img/saas/news.png" class="img-fluid" alt="">
+            </button>
+          </div>
+
+          <!-- Button to trigger the 7 modal -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+              <img src="assets/img/saas/tracker.png" class="img-fluid" alt="">
+            </button>
+          </div>
+
+          <!-- Button to trigger the 8 modal -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+              <img src="assets/img/saas/img_genn.png" class="img-fluid" alt="">
+            </button>
+          </div>
+
+
+          <!-- Button to trigger the 9 modal -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+              <img src="assets/img/saas/todo.png" class="img-fluid" alt="">
+            </button>
+          </div>
+
+          <!-- Button to trigger the 10 modal -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal10">
+              <img src="assets/img/saas/createtask.png" class="img-fluid" alt="">
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+    <!-- Modal 2 -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel4">Advanced Analytical Tool</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img style="border: 3px solid black;" class="img-fluid" src="assets/img/saas/table cal.png" alt="">
+            <hr>
+            <div id="advancedAnalyticalTool">
+              <div id="toolIntroduction">
+                <h1>Resale Rapids - Advanced Analytical Tool</h1>
+                <p>Introducing our Advanced Analytical Tool, a comprehensive feature of our SaaS product, designed to provide detailed analysis and complete insight into various product metrics. This tool is essential for Amazon sellers looking to optimize their listings and strategies, offering detailed insights and precise calculations to maximize profitability and gain a competitive edge.</p>
+            </div>
+        
+            <div id="keyFeatures">
+                <h2>Key Features:</h2>
+                <ul>
+                    <li>Strategic Decision-Making: Evaluate product potential and choose products strategically.</li>
+                    <li>Financial Planning and Optimization: Understand cost structure and profitability with clear insights.</li>
+                    <li>Market Analysis and Product Optimization: Measure market demand with estimated sales and revenue.</li>
+                    <li>Brand Management and Compliance: Ensure compliance with Amazon's product identification requirements.</li>
+                    <li>Customer Feedback and Market Trends: Understand customer preferences and market trends.</li>
+                    <li>Inventory Management: Automate listing adjustments based on stock levels.</li>
+                    <li>Promotional Strategy: Automate promotional events effectively.</li>
+                    <li>Profit Calculator: A feature to calculate Total FBA Fee, Profit per Unit, Net Margin, ROI, and Estimated Monthly Profit based on various inputs like Product Price, Taxes including VAT, Product Cost, Additional per Unit Cost, Additional Monthly Costs, and Estimated Monthly Sales.</li>
+                </ul>
+            </div>
+        
+            <div id="benefits">
+                <h2>Benefits:</h2>
+                <ul>
+                    <li>Informed Decision-Making: Make data-driven decisions with detailed product insights and analytics!</li>
+                    <li>Enhanced Profitability: Optimize your listings and strategies with precise profit calculations and insights!</li>
+                    <li>Strategic Advantage: Gain a competitive edge with comprehensive product overviews and in-depth analysis!</li>
+                </ul>
+            </div>
+        
+            <div id="howItHelpsAmazonSellers">
+                <h2>How It Helps Amazon Sellers:</h2>
+                <ul>
+                    <li>In-Depth Analysis: The tool provides detailed analysis and precise insights, allowing sellers to optimize their products and strategies effectively.</li>
+                    <li>Proactive Feedback Management: Sellers can monitor customer feedback and adjust their strategies according to market preferences and trends.</li>
+                </ul>
+            </div>
+              <div id="callToAction">
+                  🌟 Optimize Your Amazon Business with Our Advanced Analytical Tool! 🌟
+                  📊 Unlock Detailed Product Insights & Precise Profit Calculations! 📊
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Try It Now & Elevate Your Amazon Selling Journey!</a>
+              </div>
+            </div>
+          
+          </div>
+          <!-- ... Other Modal Content ... -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="openModal3"><i class="bi bi-arrow-right"></i></button>
+            <!-- Button to Open Next Modal -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel3">Automated Product Management System</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img style="border: 3px solid black;" src="assets/img/saas/dash.png" class="img-fluid"  alt="">
+            <hr>
+            <div id="automatedProductManagementSystem">
+              <p id="productName">
+                  Product Name: Resale Rapids - Automated Product Management System
+              </p>
+              <p id="briefDescription" class="alert alert-info">
+                  Introducing Resale Rapids’ “Automated Product Management System,” a revolutionary tool designed to automate, optimize, and elevate Amazon listings. This system is an essential companion for Amazon sellers looking to maximize their sales with features like sales monitoring, dynamic updates, A/B testing, inventory management integration, and much more.
+              </p>
+              <h2 id="keyFeaturesTitle">Key Features:</h2>
+              <ul id="keyFeaturesList">
+                  <li>Sales Performance Tracker: Monitor a product's sales over a user-defined period and receive updates if sales do not meet the specified threshold.</li>
+                  <li>Scheduled Price Adjustments: Automate pricing based on sales performance or time.</li>
+                  <li>Dynamic Description Updates: Optimize listings with automatic description rotations based on performance.</li>
+                  <li>Image Rotator: Rotate to a different image based on performance metrics.</li>
+                  <!-- ... Other Features ... -->
+              </ul>
+              <h2 id="benefitsTitle">Benefits:</h2>
+              <ul id="benefitsList">
+                  <li>Optimized Performance: Ensure optimal engagement and conversions with dynamic updates and A/B testing.</li>
+                  <li>Automated Efficiency: Save time with automated price adjustments, scheduled uploads, and reduced manual intervention.</li>
+                  <li>Informed Decisions: Make data-based decisions with insights from the performance analytics dashboard.</li>
+                  <!-- ... Other Benefits ... -->
+              </ul>
+              <h2 id="amazonSellersTitle">How It Helps Amazon Sellers:</h2>
+              <ul id="amazonSellersList">
+                  <li>Enhanced Customer Engagement: Improve the overall customer experience, leading to increased sales with timely promotions, optimized listings, and dynamic updates.</li>
+                  <li>Data-Based Insights: Refine strategies and make informed decisions with valuable insights on the effectiveness of changes.</li>
+                  <li>Proactive Management: Maintain a positive customer experience with the ability to make proactive adjustments to listings based on feedback and stock levels.</li>
+                  <!-- ... Other Points ... -->
+              </ul>
+              <div id="callToAction">
+                  🌟 Maximize Your Amazon Sales with Our Automated Product Management System! 🌟
+                  📈 Automate, Optimize, and Elevate Your Amazon Listings! 📈
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Try It Now & Transform Your Amazon Sales Journey!</a>
+              </div>
+            </div>
+          
+          </div>
+          <!-- ... Other Modal Content ... -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="backToModal2"><i class="bi bi-arrow-left"></i></button>
+            <!-- Back Button -->
+            <button type="button" class="btn btn-primary" id="openModal4"><i class="bi bi-arrow-right"></i></button>
+            <!-- Button to Open Next Modal -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 Modal -->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel4">Amazon Product Detail Analyzer</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img style="border: 3px solid black;" src="assets/img/saas/details_full.jpeg" class="img-fluid" alt="">
+            <hr>
+            <div id="competitiveProductAnalyzer">
+              <p id="productName">
+                Resale Rapids - Amazon Product Detail Analyzer
+              </p>
+              <p id="briefDescription" class="alert alert-info">
+                  Introducing our Amazon Product Detail Analyzer, an advanced feature in our SaaS product that provides detailed analysis and real-time tracking of specific products on Amazon using web scraping and artificial intelligence. This tool is crucial for Amazon sellers seeking to gain detailed insights and analysis of specific products, including product images, sales, customer reviews, ratings, tags, availability, and more.
+              </p>
+              <h2 id="keyFeaturesTitle">Key Features:</h2>
+              <ul id="keyFeaturesList">
+                  <li>Real-Time Tracking: Monitor changes and updates to specific Amazon products instantly.</li>
+                  <li>Customer Review Analysis: Analyze customer reviews and ratings to better understand user perceptions and preferences.</li>
+                  <li>Product Details: Access detailed information such as title, image, brand, availability, and description.</li>
+                  <li>Tag Analysis: Identify and analyze the tags associated with the product for better classification and categorization.</li>
+              </ul>
+              <h2 id="benefitsTitle">Benefits:</h2>
+              <ul id="benefitsList">
+                  <li>Competitive Advantage: Gain detailed insights to adapt strategies and outperform the competition.</li>
+                  <li>Informed Decision-Making: Use accurate and up-to-date data to make informed strategic decisions.</li>
+                  <li>Market Understanding: Understand market trends and consumer preferences with detailed analysis.</li>
+              </ul>
+              <h2 id="amazonSellersTitle">How It Helps Amazon Sellers:</h2>
+              <ul id="amazonSellersList">
+                  <li>Competitive Insights: Sellers can adapt their strategies based on detailed product insights, thus enhancing their competitiveness.</li>
+                  <li>Listing Optimization: With detailed and up-to-date information, sellers can optimize their listings to improve visibility and conversions.</li>
+                  <li>Continuous Improvement: The tool allows sellers to continually improve their products and strategies based on detailed analysis and customer feedback.</li>
+              </ul>
+              <div id="callToAction">
+                  🌟 Discover the Power of Our Amazon Product Detail Analyzer - Resale Rapids! 🌟
+                  🔍 Monitor and Analyze Products in Real-Time, and Gain Crucial Insights to Outperform the Competition! 🔍
+                  👉 Try It Now and Elevate Your Amazon Strategy to a New Level! 👈
+                  🌐 <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Try It Now & Transform Your Amazon Sales Journey!</a>
+              </div>
+          </div>
+          
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="backToModal3"><i class="bi bi-arrow-left"></i></button>
+            <!-- Back Button -->
+            <button type="button" class="btn btn-primary" id="openModal5"><i class="bi bi-arrow-right"></i></button>
+            <!-- Button to Open Next Modal -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 Modal -->
+    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel5">Intelligent Content Generator</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img style="border: 3px solid black;" src="assets/img/saas/gen.png" class="img-fluid" alt="">
+            <hr>
+            <div id="intelligentContentGenerator">
+              <p id="productName">
+                  Product Name: Resale Rapids - Intelligent Content Generator
+              </p>
+              <p id="briefDescription" class="alert alert-info">
+                  Introducing our AI-Powered Content Generator, an innovative tool of our SaaS product designed to optimize Amazon listings through the generation of SEO-optimized titles, descriptions, and images. This tool is essential for Amazon sellers looking to maximize the visibility and conversion of their products on Amazon and Google.
+              </p>
+              <h2 id="keyFeaturesTitle">Key Features:</h2>
+              <ul id="keyFeaturesList">
+                  <li>Product Title Generator: Create attractive and SEO-optimized titles that stand out!</li>
+                  <li>Description Generator: Develop concise and informative descriptions that convert!</li>
+                  <li>Image Generator: Produce captivating images that capture attention!</li>
+                  <li>Amazon Specific Details: Adapt your content to align with Amazon's algorithms!</li>
+              </ul>
+              <h2 id="benefitsTitle">Benefits:</h2>
+              <ul id="benefitsList">
+                  <li>Enhanced Visibility: Optimized titles and descriptions can significantly improve product visibility on Amazon and Google.</li>
+                  <li>Increased Conversion Rates: A well-crafted and SEO-optimized title and description can significantly improve the conversion rate.</li>
+                  <li>Time and Effort Saving: The AI-powered generator can save sellers a considerable amount of time and effort.</li>
+                  <li>Brand Consistency: Maintaining a consistent and professional tone reinforces brand identity.</li>
+              </ul>
+              <h2 id="amazonSellersTitle">How It Helps Amazon Sellers:</h2>
+              <ul id="amazonSellersList">
+                  <li>SEO Optimization: The tool creates SEO-optimized titles and descriptions that improve product visibility and ranking.</li>
+                  <li>Conversion Rate Improvement: With clear and concise content, sellers can improve user engagement and increase conversion rates.</li>
+                  <li>Efficiency and Consistency: The generator saves time and effort in creating effective content and ensures brand consistency across all listings.</li>
+              </ul>
+              <div id="callToAction">
+                  🌟 Transform Your Amazon Listings with Our AI-Powered Content Generator! 🌟
+                  📈 Optimize Your Titles, Descriptions & Images for Maximum Visibility & Conversion! 📈
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Try It Now & Elevate Your Amazon Listing Game!</a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="backToModal4"><i class="bi bi-arrow-left"></i></button>
+            <!-- Back Button -->
+            <button type="button" class="btn btn-primary" id="openModal6"><i class="bi bi-arrow-right"></i></button>
+            <!-- Button to Open Next Modal -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 Modal -->
+    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel6">MarketMinds Newsletter</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img style="border: 3px solid black;" src="assets/img/saas/news.png" class="img-fluid" alt="">
+            <hr>
+            <div id="resaleRapidsNewsletter">
+              <div id="resaleRapidsNewsletter">
+                <p id="productName">
+                    Product Name: Resale Rapids - MarketMinds Newsletter
+                </p>
+                <p id="briefDescription" class="alert alert-info">
+                    Introducing our comprehensive resource designed to empower Amazon sellers with insights, strategies, and exclusive content! Offering advanced AI-driven analysis, real-time competitor monitoring, interactive dashboards, and much more.
+                </p>
+                <h2 id="keyFeaturesTitle">Features:</h2>
+                <ul id="keyFeaturesList">
+                    <li>Trending Product Analysis: Identify and predict top-selling products and upcoming trends.</li>
+                    <li>Market Gap Identification: Analyze customer reviews and comments to identify unmet needs.</li>
+                    <!-- ... Other Features ... -->
+                </ul>
+                <h2 id="benefitsTitle">Benefits:</h2>
+                <ul id="benefitsList">
+                    <li>Strategic Advantage: Gain unparalleled insights into market trends, competitor strategies, and customer sentiments.</li>
+                    <li>Risk Mitigation: Proactively manage risks and ensure compliance with timely alerts.</li>
+                    <!-- ... Other Benefits ... -->
+                </ul>
+                <h2 id="amazonSellersTitle">How It Helps Amazon Sellers:</h2>
+                <ul id="amazonSellersList">
+                    <li>Strategic Advantage: Sellers can effectively optimize their listings by gaining unparalleled insights.</li>
+                    <li>Risk Mitigation: Sellers can safeguard their business by proactively managing risks.</li>
+                    <!-- ... Other Points ... -->
+                </ul>
+                <div id="callToAction">
+                    🚀 Discover our ultimate SaaS Newsletter for sellers and elevate your Amazon business to new heights! 🚀
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Subscribe Now</a>
+                </div>
+            </div>
+            
+          </div>
+          
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="backToModal5"><i class="bi bi-arrow-left"></i></button>
+            <!-- Back Button -->
+            <button type="button" class="btn btn-primary" id="openModal7"><i class="bi bi-arrow-right"></i></button>
+            <!-- Button to Open Next Modal -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7 Modal -->
+    <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel7">Competitive Product Analyzer</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img style="border: 3px solid black;" src="assets/img/saas/tracker.png" class="img-fluid" alt="">
+            <hr>
+            <div id="competitiveProductAnalyzer">
+              <p id="productName">
+                  Product Name: Resale Rapids - Competitive Product Analyzer
+              </p>
+              <p id="briefDescription" class="alert alert-info">
+                  Introducing our innovative Amazon Product Tracker, a feature in our SaaS product designed to empower Amazon sellers by providing real-time tracking and performance analysis of competitor products on Amazon. It displays detailed product details, allowing sellers to monitor any changes and analyze performance instantly.
+              </p>
+              <h2 id="keyFeaturesTitle">Key Features:</h2>
+              <ul id="keyFeaturesList">
+                  <li>Real-Time Tracking: Monitor competitor products on Amazon for any real-time changes!</li>
+                  <li>Performance Analysis: Gain insights on how a product is performing in terms of ratings, price, and availability!</li>
+                  <li>Detailed Product Overview: Access comprehensive details like Product Title, Brand, Price, Description, and more!</li>
+              </ul>
+              <h2 id="benefitsTitle">Benefits:</h2>
+              <ul id="benefitsList">
+                  <li>Strategic Advantage: Stay informed about the competitor's movements and adapt your strategies to stay ahead!</li>
+                  <li>Informed Decision-Making: Make data-driven decisions with real-time insights and detailed product overviews!</li>
+                  <li>Time & Effort Saving: Let AI monitor and analyze competitor products, saving you time and effort!</li>
+                  <li>Enhanced Market Understanding: Better understand market trends and competitor strategies with instant tracking and analysis!</li>
+              </ul>
+              <h2 id="amazonSellersTitle">How It Helps Amazon Sellers:</h2>
+              <ul id="amazonSellersList">
+                  <li>Competitive Insight: Sellers can gain a strategic advantage by staying informed about competitor products and performances, allowing them to effectively adapt their strategies.</li>
+                  <li>Data-Driven Strategies: With real-time insights and detailed product overviews, sellers can make informed decisions to optimize their listings and pricing strategies.</li>
+                  <li>Efficiency and Focus: The tool saves sellers time and effort in monitoring competitor products, allowing them to focus more on improving their products and strategies.</li>
+              </ul>
+              <div id="callToAction">
+                  🌟 Stay Ahead with Our Real-Time Amazon Product Tracker! 🌟
+                  🔍 Monitor Competitor Products, Track Changes & Analyze Performance Instantly! 🔍
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Try It Now & Gain a Competitive Edge in the Amazon Marketplace!</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="backToModal6"><i class="bi bi-arrow-left"></i></button>
+            <!-- Back Button -->
+            <button type="button" class="btn btn-primary" id="openModal8"><i class="bi bi-arrow-right"></i></button>
+            <!-- Button to Open Next Modal -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8 Modal -->
+    <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel8" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel8">Visual Creator and Product Visualization Tool</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img style="border: 3px solid black;" src="assets/img/saas/img_genn.png" class="img-fluid" alt="">
+            <hr>
+            <div class="alert alert-info">
+              <p>An advanced AI-powered Image Generator and DALL·E, designed to empower Amazon sellers by transforming texts into visuals, generating custom models, and modifying images precisely.</p>
+            </div>
+              <h2>Key Features:</h2>
+              <ul>
+                  <li>Text-to-Image Transformation: Convert any text into six dynamic images instantly!</li>
+                  <li>Custom Model Generation: Create your own models and overlay your products for enhanced representation!</li>
+                  <li>Image Modification: Upload and instruct AI to adapt images to your exact needs!</li>
+                  <li>Customized Product Mockups: Visualize products in various environments, colors, or styles.</li>
+              </ul>
+              <h2>Benefits:</h2>
+              <ul>
+                  <li>Enhanced Creativity and Customization: Explore diverse visuals and create custom models for unique product representation!</li>
+                  <li>Increased Engagement and Conversions: Attract more buyers with tailor-made and compelling images!</li>
+                  <li>Time and Effort Savings: Let AI do the heavy lifting in creating and modifying images effortlessly!</li>
+                  <li>Versatile Applications: Ideal for optimizing product images, ad creatives, social media posts, and more!</li>
+              </ul>
+              <h2>How It Helps Amazon Sellers:</h2>
+              <ul>
+                  <li>Unique Product Representation: Generate your own models and overlay your products for a unique and personalized product representation.</li>
+                  <li>Creative Control and Customization: Empower sellers to explore diverse visuals, create custom models, and modify images to align perfectly with their brand vision and identity.</li>
+                  <li>Efficiency and Versatility: Save time and effort with the AI-powered generator, ideal for creating optimized product images, ad creatives, social media posts, and more.</li>
+              </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="backToModal7"><i class="bi bi-arrow-left"></i></button>
+            <!-- Back Button -->
+            <button type="button" class="btn btn-primary" id="openModal9"><i class="bi bi-arrow-right"></i></button>
+            <!-- Button to Open Next Modal -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9 Modal -->
+    <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel9" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel9">AI Task Optimizer</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img style="border: 3px solid black;" src="assets/img/saas/todo.png" class="img-fluid" alt="">
+            <hr>
+            <div id="competitiveProductAnalyzer">
+              <p id="productName">
+                  Resale Rapids - AI Task Optimizer
+              </p>
+              <p id="briefDescription" class="alert alert-info">
+                  Introducing our Intelligent Task Optimizer, an advanced feature in our SaaS service designed to maximize the productivity and focus of Amazon sellers. This innovative Kanban To-Do List uses artificial intelligence to provide proactive reminders, a work clock, and specific frequencies to enhance concentration, allowing users to manage and optimize their tasks efficiently.
+              </p>
+              <h2 id="keyFeaturesTitle">Key Features:</h2>
+              <ul id="keyFeaturesList">
+                  <li>Intelligent Kanban List: Visually and effectively organize your tasks.</li>
+                  <li>Proactive Reminders: Receive alerts to stay on the right track.</li>
+                  <li>Integrated Work Clock: Manage your time effectively with a work clock.</li>
+                  <li>Concentration Frequencies: Use specific frequencies to enhance your concentration and productivity.</li>
+              </ul>
+              <h2 id="benefitsTitle">Benefits:</h2>
+              <ul id="benefitsList">
+                  <li>Time Optimization: Maximize your time with intelligent task management.</li>
+                  <li>Productivity Enhancement: Boost your performance with improved concentration and reminders.</li>
+                  <li>Effective Task Management: Efficiently organize and prioritize your tasks with our Kanban list.</li>
+              </ul>
+              <h2 id="amazonSellersTitle">How It Helps Amazon Sellers:</h2>
+              <ul id="amazonSellersList">
+                  <li>Enhanced Task Management: Sellers can effectively organize and prioritize their tasks.</li>
+                  <li>Increased Concentration: Specific frequencies and the work clock assist sellers in staying focused.</li>
+                  <li>Optimized Productivity: Proactive reminders and intelligent task management enable sellers to maximize their performance.</li>
+              </ul>
+              <div id="callToAction">
+                  🌟 Elevate Your Productivity with Resale Rapids - Intelligent Task Optimizer! 🌟
+                  🚀 Organize, Manage, and Optimize Your Tasks with Our Innovative Tool! 🚀
+                  💡 Maximize Your Time, Enhance Your Concentration, and Boost Your Performance Effectively!
+                  👉 Try It Now and Transform Your Way of Working! 👈
+                  🌐 <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Try It Now & Elevate Your Amazon Listing Game!</a>
+              </div>
+            </div>
+          
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="backToModal8"><i class="bi bi-arrow-left"></i></button>
+            <!-- Back Button -->
+            <button type="button" class="btn btn-primary" id="openModal10"><i class="bi bi-arrow-right"></i></button>
+            <!-- Button to Open Next Modal -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10 Modal -->
+    <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel10" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel10">Create task</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img style="border: 3px solid black;" src="assets/img/saas/createtask.png" class="img-fluid" alt="">
+            <hr>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="backToModal9"><i class="bi bi-arrow-left"></i></button>
+            <!-- Back Button -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Team Section ======= -->
+    <!-- <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Team</h2>
+          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>End Team Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <p>Choose Your Plan</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box" data-aos="zoom-in-right" data-aos-delay="200">
+              <h3>Basic</h3>
+              <h4><sup>$</sup>19<span> / month</span></h4>
+              <ul>
+                <li>Basic scraping tools</li>
+                <li>Product discovery</li>
+                <li>Listing assistance</li>
+                <li>AI tools usage limited to 10 times</li>
+                <li class="na">Competitor analysis</li>
+                <li class="na">E-commerce integration</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
+              <h3>Starter</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li>Basic scraping tools</li>
+                <li>Product discovery</li>
+                <li>Listing assistance</li>
+                <li>AI tools</li>
+                <li>Competitor analysis</li>
+                <li class="na">E-commerce integration</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in-right" data-aos-delay="200">
+              <h3>Professional</h3>
+              <h4><sup>$</sup>59<span> / month</span></h4>
+              <ul>
+                <li>Advanced scraping tools</li>
+                <li>Product discovery</li>
+                <li>Listing assistance</li>
+                <li>AI & Non-AI tools</li>
+                <li>Competitor analysis</li>
+                <li>E-commerce integration</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>How does the web scraping technology work?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Our advanced algorithms scan various sites to identify trending products and provide insights on
+              sourcing them. This helps sellers discover potential best-sellers and understand market demands.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>Is my data safe with you?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Absolutely! We prioritize security and ensure all your data remains confidential. Our platform uses
+              advanced encryption methods to protect your information.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>Can I integrate with other e-commerce platforms?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Yes, our service supports integration with various e-commerce platforms. Whether you're selling on
+              Amazon, eBay, Shopify, or any other platform, we've got you covered.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>What kind of support can I expect?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              We offer 24/7 customer support to assist with any queries or issues you might have. Whether it's a
+              technical glitch or a simple question about our services, our team is always here to help.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>How do the AI tools enhance my listings?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Our AI tools analyze market trends and customer preferences to generate captivating posts and
+              descriptions. This ensures your products stand out, leading to increased visibility and sales.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="600">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>Do I need any technical knowledge to use the platform?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Not at all! Our platform is designed to be user-friendly. Whether you're tech-savvy or a complete
+              beginner, you'll find our platform easy to navigate and use.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-about">
+              <h3>Vesperr</h3>
+              <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque
+                felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-aos="fade-up" data-aos-delay="200">
+            <div class="info">
+              <div>
+                <i class="ri-map-pin-line"></i>
+                <p>A108 Adam Street<br>New York, NY 535022</p>
+              </div>
+
+              <div>
+                <i class="ri-mail-send-line"></i>
+                <p>contact@resellrapids.com</p>
+              </div>
+
+              <div>
+                <i class="ri-phone-line"></i>
+                <p>+52 744-505-5734</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
+            <form action="" method="">
+              <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center">
+                  <button type="submit">Send Message</button>
+              </div>
+            </form>
+          
+          </div> -->
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>Resell Rapids</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#intro" class="scrollto">Home</a>
+            <a href="#about" class="scrollto">About</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SUBSCRIBE NOW</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="scene">
+            <div class="content-wrapper"> <!-- New container div -->
+              <div class="rocket">
+                <img src="img/rocket.png" alt="" srcset="">
+              </div>
+              <br>
+              <div class="rocket-text">Resell-Rapids launching soon!</div>
+              <br>
+              <div class="timer">
+                <h2>Countdown Timer</h2>
+                <div id="days">00</div> d
+                <div id="hours">00</div> h
+                <div id="minutes">00</div> m
+                <div id="seconds">00</div> s
+              </div>
+
+              <!-- Subscribe Now Section -->
+              <div class="subscribe-section">
+                <h2>Subscribe Now</h2>
+                <p>Stay updated with our latest news and offers.</p>
+                <form action="https://submit-form.com/wlmKcO7i" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function stars() {
+      let count = 100;
+      let scene = document.querySelector('.scene');
+      let i = 0;
+      while (i < count) {
+        let star = document.createElement('i');
+        let x = Math.floor(Math.random() * window.innerWidth);
+        let duration = Math.random() * 5 + 1; // Random duration between 1 to 6 seconds
+        let h = Math.random() * 100;
+        star.style.left = x + 'px';
+        star.style.width = '1px';
+        star.style.height = 60 + h + 'px';
+        star.style.animationDuration = duration + 's';
+        scene.appendChild(star);
+        i++;
+      }
+    }
+    stars();
+
+    document.addEventListener("DOMContentLoaded", function () {
+      // Check if we already have an end time in localStorage
+      var countDownDate = localStorage.getItem('countDownDate');
+
+      // If not, set the date we're counting down to (one month from now) and store it in localStorage
+      if (!countDownDate) {
+        var now = new Date().getTime();
+        countDownDate = new Date(now + 30 * 24 * 60 * 60 * 1000); // Adds one month to the current date
+        localStorage.setItem('countDownDate', countDownDate);
+      }
+
+      // Update the countdown every second
+      var x = setInterval(function () {
+        var now = new Date().getTime();
+        var distance = new Date(countDownDate).getTime() - now;
+
+        // Time calculations
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the results
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        // If the countdown is finished, display a message
+        if (distance < 0) {
+          clearInterval(x);
+          document.querySelector(".timer").innerHTML = "EXPIRED";
+          localStorage.removeItem('countDownDate'); // Clear the end time from localStorage
+        }
+      }, 1000);
+    });
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+      var modal2 = new bootstrap.Modal(document.getElementById('exampleModal2'));
+      var modal3 = new bootstrap.Modal(document.getElementById('exampleModal3'));
+      var modal4 = new bootstrap.Modal(document.getElementById('exampleModal4'));
+      var modal5 = new bootstrap.Modal(document.getElementById('exampleModal5'));
+      var modal6 = new bootstrap.Modal(document.getElementById('exampleModal6'));
+      var modal7 = new bootstrap.Modal(document.getElementById('exampleModal7'));
+      var modal8 = new bootstrap.Modal(document.getElementById('exampleModal8'));
+      var modal9 = new bootstrap.Modal(document.getElementById('exampleModal9'));
+      var modal10 = new bootstrap.Modal(document.getElementById('exampleModal10'));
+
+      // Modal 2 and Modal 3
+      document.getElementById('openModal3').addEventListener('click', function () {
+        modal2.hide();
+        modal3.show();
+      });
+      document.getElementById('backToModal2').addEventListener('click', function () {
+        modal3.hide();
+        modal2.show();
+      });
+
+      // Modal 3 and Modal 4
+      document.getElementById('openModal4').addEventListener('click', function () {
+        modal3.hide();
+        modal4.show();
+      });
+      document.getElementById('backToModal3').addEventListener('click', function () {
+        modal4.hide();
+        modal3.show();
+      });
+
+      // Modal 4 and Modal 5
+      document.getElementById('openModal5').addEventListener('click', function () {
+        modal4.hide();
+        modal5.show();
+      });
+      document.getElementById('backToModal4').addEventListener('click', function () {
+        modal5.hide();
+        modal4.show();
+      });
+
+      // Modal 5 and Modal 6
+      document.getElementById('openModal6').addEventListener('click', function () {
+        modal5.hide();
+        modal6.show();
+      });
+      document.getElementById('backToModal5').addEventListener('click', function () {
+        modal6.hide();
+        modal5.show();
+      });
+
+      // Modal 6 and Modal 7
+      document.getElementById('openModal7').addEventListener('click', function () {
+        modal6.hide();
+        modal7.show();
+      });
+      document.getElementById('backToModal6').addEventListener('click', function () {
+        modal7.hide();
+        modal6.show();
+      });
+
+      // Modal 7 and Modal 8
+      document.getElementById('openModal8').addEventListener('click', function () {
+        modal7.hide();
+        modal8.show();
+      });
+      document.getElementById('backToModal7').addEventListener('click', function () {
+        modal8.hide();
+        modal7.show();
+      });
+
+      // Modal 8 and Modal 9
+      document.getElementById('openModal9').addEventListener('click', function () {
+        modal8.hide();
+        modal9.show();
+      });
+      document.getElementById('backToModal8').addEventListener('click', function () {
+        modal9.hide();
+        modal8.show();
+      });
+
+      // Modal 9 and Modal 10
+      document.getElementById('openModal10').addEventListener('click', function () {
+        modal9.hide();
+        modal10.show();
+      });
+      document.getElementById('backToModal9').addEventListener('click', function () {
+        modal10.hide();
+        modal9.show();
+      });
+    });
+
+
+  </script>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
