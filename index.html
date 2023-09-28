@@ -48,7 +48,7 @@
     .scene {
       position: inherit;
       width: 100%;
-      height: 80vh;
+      /* height: 20vh; */
       background: #01070a;
       overflow: hidden;
       display: flex;
@@ -194,7 +194,7 @@
       border-radius: 5px;
       /* Rounded corners */
       width: 100%;
-      max-width: 650px;
+      max-width: 770px;
       margin-bottom: 15px;
       /* Space between input and button */
       font-size: 16px;
@@ -389,7 +389,7 @@
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <p>
               <div class="tilt-container">
-                <img class="img-fluid imgg" src="assets/img/saas/table cal.png" alt="" srcset="">
+                <img style="border-radius: 10px;" class="img-fluid imgg" src="assets/img/saas/table cal.png" alt="" srcset="">
               </div>
             </p>
             <a href="#" class="btn-learn-more">Learn More</a>
@@ -1760,31 +1760,27 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="scene overflow-auto">
+          <div class="scene ">
             <div class="content-wrapper"> <!-- New container div -->
               <div class="rocket">
                 <img src="img/rocket.png" alt="" srcset="">
               </div>
-              <br>
               <div class="rocket-text">Resell-Rapids launching soon!</div>
-              <br>
+              <!-- Subscribe Now Section -->
+              <div class="subscribe-section">
+                <form action="https://submit-form.com/wlmKcO7i" method="POST">
+                  <input type="email" name="email" placeholder="Enter your email stay updated on launch" required>
+                  <button type="submit">Subscribe!</button>
+                </form>
+              </div>
               <div class="timer">
-                <h2>Countdown Timer</h2>
+                <h2>Launching In</h2>
                 <div id="days">00</div> d
                 <div id="hours">00</div> h
                 <div id="minutes">00</div> m
                 <div id="seconds">00</div> s
               </div>
-
-              <!-- Subscribe Now Section -->
-              <div class="subscribe-section">
-                <h2>Subscribe Now</h2>
-                <p>Stay updated with our latest news and offers.</p>
-                <form action="https://submit-form.com/wlmKcO7i" method="POST">
-                  <input type="email" name="email" placeholder="Enter your email" required>
-                  <button type="submit">Subscribe</button>
-                </form>
-              </div>
+              <br><br><br>
 
             </div>
           </div>
